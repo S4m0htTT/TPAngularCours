@@ -1,0 +1,55 @@
+form {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+  }
+  
+  form div {
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 1%;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form select {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+  }
+  
+  form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2% 4%;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style pour les champs requis non remplis */
+  input:required:invalid,
+  select:required:invalid {
+    border-color: #ff0000;
+  }
+  
+  /* Style pour les messages d'erreur */
+  input:invalid + span::after {
+    content: '⚠ Champ requis';
+    display: block;
+    color: #ff0000;
+    font-size: 0.8em;
+  }
+  

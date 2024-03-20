@@ -1,0 +1,45 @@
+<h2>Formulaire Étudiant</h2>
+
+<form formGroupName="formEtu" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="nom">Nom :</label>
+      <input formControlName="nom" type="text" id="nom" name="nom" required>
+    </div>
+    <div>
+      <label for="prenom">Prénom :</label>
+      <input formControlName="prenom" type="text" id="prenom" name="prenom" required>
+    </div>
+    <div>
+      <label for="rue">Rue :</label>
+      <input formControlName="rue" type="text" id="rue" name="rue" required>
+    </div>
+    <div>
+      <label for="cp">Code postal :</label>
+      <input formControlName="cp" type="text" id="cp" name="cp" required>
+    </div>
+    <div>
+      <label for="ville">Ville :</label>
+      <input formControlName="ville" type="text" id="ville" name="ville" required>
+    </div>
+    <div>
+      <label for="courriel">Courriel :</label>
+      <input formControlName="couriel" type="email" id="courriel" name="courriel" required>
+    </div>
+    <div>
+      <label for="genre">Genre :</label>
+      <select formControlName="genre" id="genre" name="genre" required>
+        <option value="homme">Homme</option>
+        <option value="femme">Femme</option>
+      </select>
+    </div>
+    <div>
+      <label for="age">Âge :</label>
+      <input formControlName="age" type="number" id="age" name="age" required>
+    </div>
+    <div>
+        <label for="idCand">Id Candidat :</label>
+        <input formControlName="idCand" type="number" id="idCand" name="idCand" required>
+    </div>
+    <button type="submit">Soumettre</button>
+  </form>
+  

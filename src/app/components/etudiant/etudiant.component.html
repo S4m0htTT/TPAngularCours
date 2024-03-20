@@ -1,0 +1,22 @@
+<h2>Liste Étudiants</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Adresse</th>
+            <th>Mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of donnee">
+            <th>{{ item._idCand }}</th>
+            <th>{{ item._nom }}</th>
+            <th>{{ item._prenom }}</th>
+            <th>{{ item._ville }}</th>
+            <th>{{ item._couriel }}</th>
+        </tr>
+    </tbody>
+</table>
